@@ -1,14 +1,15 @@
-# Plotly
-import plotly
-import plotly.express as px
-
-from dash import Dash, html, dcc, Input, Output, State, callback, Patch
-import dash_bootstrap_components as dbc
-import dash_ag_grid as dag
-import plotly.graph_objects as go
-
-# Pandas
+import hvplot.pandas
+import numpy as np
 import pandas as pd
+import panel as pn
+from plotly import subplots
 
-nac2018 = pd.read_csv('./src/data/NACIMIENTOS/nac2018.csv')
+PRIMARY_COLOR = "#0072B5"
+SECONDARY_COLOR = "#B54300"
+CSV_FILE = (
+    "https://raw.githubusercontent.com/holoviz/panel/main/examples/assets/occupancy.csv"
+)
+
+pn.extension("plotly")
+pn.extension(design="material", sizing_mode="stretch_width")
 
