@@ -13,3 +13,4 @@ CSV_FILE = (
 pn.extension("plotly")
 pn.extension(design="material", sizing_mode="stretch_width")
 
+pd.read_excel('data/DatosPreparados.csv')
