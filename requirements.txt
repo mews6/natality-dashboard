@@ -8,3 +8,4 @@ watchfiles
 hvplot
 openpyxl
 jupyter_bokeh
+xarray
